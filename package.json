@@ -6,7 +6,7 @@
 		"test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests",
 		"format": "prettier --write ./client",
 		"format:check": "prettier --check ./client",
-		"spell-check": "cspell  './**'",
+		"spell-check": "cspell  \"./**\"",
 		"lint:ls": "ls-lint",
 		"lint:md": "markdownlint --ignore node_modules --config ./.markdownlint.jsonc --fix ./ ",
 		"lint:css": "stylelint",
