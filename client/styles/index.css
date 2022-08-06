@@ -1,1 +1,171 @@
 @import url('./other-file.css');
+
+/* create colors list for my app */
+
+:root {
+	--dark: #374151;
+	--darker: #1f2937;
+	--darkest: #111827;
+	--grey: #6b7280;
+	--light: #eee;
+	--pink: #ec4899;
+	--purple: #8b5cf6;
+}
+/* set general style  */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Fira sans', sans-serif;
+}
+
+/* body style */
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: var(--dark);
+	color: #fff;
+}
+
+/* header style */
+
+header {
+	padding: 32px 16px;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1 {
+	font-size: 40px;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 16px;
+}
+
+/* form style */
+#new-shopping-form {
+	display: flex;
+}
+
+input,
+button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+/* style input */
+#new-shopping-input {
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 16px;
+	border-radius: 16px;
+	margin-right: 16px;
+	color: var(--light);
+	font-size: 18px;
+}
+
+#new-shopping-input::placeholder {
+	color: var(--grey);
+}
+
+/* style for input */
+#new-shopping-submit {
+	color: var(--pink);
+	font-size: 18px;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-shopping-submit:hover {
+	opacity: 0.8;
+}
+
+#new-shopping-submit:active {
+	opacity: 0.6;
+}
+
+/* style main section */
+main {
+	flex: 1 1 0%;
+	min-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.shopping-list {
+	padding: 16px;
+}
+
+.shopping-list h2 {
+	font-size: 24px;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 16px;
+}
+/* style div with id shopping */
+#shopping .shopping {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	padding: 16px;
+	border-radius: 16px;
+	margin-bottom: 16px;
+}
+
+/* content style */
+.shopping .content {
+	flex: 1 1 0%;
+}
+
+.shopping .content .text {
+	color: var(--light);
+	font-size: 18px;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.shopping .content .text:not(:read-only) {
+	color: var(--pink);
+}
+
+.shopping .actions {
+	display: flex;
+	margin: 0 -8px;
+}
+
+.shopping .actions button {
+	cursor: pointer;
+	margin: 0 8px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.shopping .actions button:hover {
+	opacity: 0.8;
+}
+
+.shopping .actions button:active {
+	opacity: 0.6;
+}
+
+.shopping .actions .edit {
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.shopping .actions .delete {
+	color: crimson;
+}

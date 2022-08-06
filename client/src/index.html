@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grocery list</title>
+		<link rel="stylesheet" href="../styles/index.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Easy shopping</h1>
+			<form id="new-shopping-form">
+				<input
+					type="text"
+					id="new-shopping-input"
+					placeholder="What do you need to buy"
+				/>
+				<input
+					type="submit"
+					id="new-shopping-submit"
+					value="Add items to buy"
+				/>
+			</form>
+		</header>
+		<main>
+			<section class="shopping-list">
+				<h2>Shopping List</h2>
+				<div id="shopping">
+					<!--If you uncomment this block you can make your JS shorter-->
+					<!-- <div class="task">
+						<div class="content">
+							<input type="text" class="text" value="My shiny task" readonly/>
+						</div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+					</div>  -->
+				</div>
+			</section>
+		</main>
+		<script src="init.js"></script>
+	</body>
+</html>
